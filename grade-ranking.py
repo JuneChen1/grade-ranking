@@ -18,6 +18,9 @@ while True:
 
 gradeList.sort()
 length = len(gradeList)
+average = round(sum(gradeList)/length, 1)
 
+print("----------------------")
+print("平均成績：", average)
 print("最大的三個成績：{}、{}、{}".format(gradeList[length-1], gradeList[length-2], gradeList[length-3]))
 print("最小的三個成績：{}、{}、{}".format(gradeList[0], gradeList[1], gradeList[2]))
